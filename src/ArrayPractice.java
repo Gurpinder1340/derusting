@@ -11,11 +11,12 @@ public class ArrayPractice {
     arr[2] = "Mangos";
     arr[3] = "Cherry";
 
-    System.out.println(arr[0]);
+   // System.out.println(arr[0]);
    
 
 
     // Get the value of the array at index 2
+    System.out.println(arr[2]);
 
     // Get the length of the array
 
