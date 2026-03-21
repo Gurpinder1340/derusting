@@ -2,10 +2,18 @@ public class ArrayPractice {
   public static void main(String[] args) {
     // Create an array of Strings of size 4
     String[] arr = new String[4];
-    System.out.println(arr.length);
+  // System.out.println(arr.length);
     
     // Set the value of the array at each index to be a different String
     // It's OK to do this one-by-one
+    arr[0] = "Apple";
+    arr[1] = "Banana";
+    arr[2] = "Mangos";
+    arr[3] = "Cherry";
+
+    System.out.println(arr[0]);
+   
+
 
     // Get the value of the array at index 2
 
