@@ -29,12 +29,25 @@ public class MapPractice {
     System.out.println("Contains key 'Chris'? " + map.containsKey("Chris"));
     
     // Check whether the Map contains a given value
+    System.out.println("Contains value 30? " + map.containsValue(30));
 
     // Iterate over the keys of the Map, printing each key
+   System.out.println("Keys:");
+  for (String key : map.keySet()) {
+    System.out.println(key);
+}
 
     // Iterate over the values of the map, printing each value
+    System.out.println("Values:");
+for (Integer value : map.values()) {
+    System.out.println(value);
+}
 
     // Iterate over the entries in the map, printing each key and value
+  System.out.println("Entries:");
+for (Map.Entry<String, Integer> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue());
+}
 
     /*
      * Usage tip!
