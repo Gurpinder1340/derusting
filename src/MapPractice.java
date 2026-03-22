@@ -22,9 +22,12 @@ public class MapPractice {
     System.out.println("Map size:" + map.size());
 
     // Replace the value associated with a given key (the size of the Map shoukld not change)
+    map.put("John", 26);
+    System.out.println("John's new age:" + map.get("John"));
 
     // Check whether the Map contains a given key
-
+    System.out.println("Contains key 'Chris'? " + map.containsKey("Chris"));
+    
     // Check whether the Map contains a given value
 
     // Iterate over the keys of the Map, printing each key
