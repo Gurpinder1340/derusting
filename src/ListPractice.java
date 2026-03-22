@@ -1,5 +1,6 @@
   import java.util.List;
   import java.util.ArrayList;
+  import java.util.Collections;
   
   public class ListPractice {
 
@@ -26,14 +27,28 @@
     list.add(0, "Mangos");
 
     // Check whether the list contains a certain string
+    boolean hasApple = list.contains("Apple");
+    System.out.println("Contains Apple? " + hasApple);
+
+    System.out.println(list.contains("Apple"));
 
     // Iterate over the list using a traditional for-loop.
     // Print each index and value on a separate line
+    for (int i = 0; i < list.size(); i++ ) {
+      System.out.println("Index " + i + "; " + list.get(i));
+    }
 
     // Sort the list using the Collections library
+    Collections.sort(list);
+
+    System.out.println("Sorting:");
 
     // Iterate over the list using a for-each loop
     // Print each value on a second line
+
+    for (String item: list) {
+      System.out.println(item);
+    }
 
     /*
      * Usage tip!
