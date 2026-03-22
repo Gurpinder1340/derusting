@@ -1,16 +1,25 @@
-
+import java.util.Map;
+import java.util.HashMap;
 
 public class MapPractice {
   public static void main(String[] args) {
     // Create a HashMap with String keys and Integer values and
     // assign it to a variable of type Map
 
+    Map<String, Integer> map = new HashMap<>();
+
     // Put 3 different key/value pairs in the Map
-    // (it's OK to do this one-by-one)
+    map.put("John", 25);
+    map.put("Bob", 30);
+    map.put("Chris", 35);
+   
+  // (it's OK to do this one-by-one)
 
     // Get the value associated with a given key in the Map
+    System.out.println("Bob's age: " + map.get("Bob"));
 
     // Find the size (number of key/value pairs) of the Map
+    System.out.println("Map size:" + map.size());
 
     // Replace the value associated with a given key (the size of the Map shoukld not change)
 
