@@ -1,28 +1,49 @@
-
+import java.util.*;
 
 public class MapPractice {
   public static void main(String[] args) {
     // Create a HashMap with String keys and Integer values and
     // assign it to a variable of type Map
+    HashMap<String, Integer> map = new HashMap<>();
 
     // Put 3 different key/value pairs in the Map
     // (it's OK to do this one-by-one)
+    map.put("Mango", 1);
+    map.put("grapes", 2);
+    map.put("Apple", 3);
+     
 
     // Get the value associated with a given key in the Map
+    map.get("Mango");
 
     // Find the size (number of key/value pairs) of the Map
+    System.out.println(map.size());
 
     // Replace the value associated with a given key (the size of the Map shoukld not change)
+    map.replace("Mango", 4);
 
     // Check whether the Map contains a given key
+   System.out.println(map.containsKey("Mango"));
 
     // Check whether the Map contains a given value
+   System.out.println(map.containsValue(1));
+   System.out.println(map.containsValue(4));
+   System.out.println(map.containsValue(0));
 
     // Iterate over the keys of the Map, printing each key
+    for (String key : map.keySet()) {
+      System.out.println(key);
+    }
 
     // Iterate over the values of the map, printing each value
+    for (int value : map.values()) {
+      System.out.println(value);
+    }
 
     // Iterate over the entries in the map, printing each key and value
+    for (Map.Entry<String, Integer> entry : map.entrySet()) {
+      System.out.println(entry.getKey() + ": " + entry.getValue());
+    }
 
     /*
      * Usage tip!
